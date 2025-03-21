@@ -1,20 +1,21 @@
 ﻿using JokenPoNerd.API.Enums;
+using JokenPoNerd.API.Models;
 
-namespace JokenPoNerd.API.Models
+namespace JokenPoNerd.API.Entity
 {
-    public class Spock : JokenPoAbstract 
+    public class Spock : JokenPoAbstract
     {
         public Spock(ETipo jogador2)
         {
-            this.Jogador2 = jogador2;
+            Jogador2 = jogador2;
         }
 
         public override string VerificarGanhador()
         {
-            if (this.Jogador2 == ETipo.Tesoura || this.Jogador2 == ETipo.Pedra)
+            if (Jogador2 == ETipo.Tesoura || Jogador2 == ETipo.Pedra)
                 return "Jogador 1 ganhou";
 
-            else if (this.Jogador2 == ETipo.Spock)
+            else if (Jogador2 == ETipo.Spock)
                 return "Empate";
 
             return "Jogador 2 ganhou";

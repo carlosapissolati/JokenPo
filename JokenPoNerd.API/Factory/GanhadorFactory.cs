@@ -1,4 +1,5 @@
-﻿using JokenPoNerd.API.Enums;
+﻿using JokenPoNerd.API.Entity;
+using JokenPoNerd.API.Enums;
 using JokenPoNerd.API.Models;
 using System;
 using System.Collections.Generic;
